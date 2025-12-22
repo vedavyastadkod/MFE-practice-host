@@ -57,3 +57,8 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+To configure webpack module-federation use below command. This will update the necessary configurations. 
+```bash
+ng add @angular-architects/module-federation --project=my-host --type=host --defaults
+```
