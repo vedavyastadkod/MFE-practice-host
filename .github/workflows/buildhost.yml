@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'host/**'
 jobs:
   deploy-host:
     runs-on: ubuntu-latest
