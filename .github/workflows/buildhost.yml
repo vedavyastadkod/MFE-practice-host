@@ -2,7 +2,7 @@ name: deploy-host
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'host/**'
 jobs:
