@@ -8,7 +8,7 @@ export const routes: Routes = [
         path: '',
         loadChildren: () => loadRemoteModule({
             type: 'module',
-            remoteEntry: 'http://localhost:8081/app/my-products-mfe/remoteEntry.js',
+            remoteEntry: 'https://d5r4e842o6tb5.cloudfront.net/app/my-products-mfe/remoteEntry.js',
             exposedModule: './routes'
         }).then(m => m.routes)
     },
@@ -16,7 +16,7 @@ export const routes: Routes = [
         path: 'standalone',
         loadComponent: () => loadRemoteModule({
             type: 'module',
-            remoteEntry: 'http://localhost:8081/remoteEntry.js',
+            remoteEntry: 'https://d5r4e842o6tb5.cloudfront.net/remoteEntry.js',
             exposedModule: './StandaloneComponent'
         }).then(m => m.StandaloneComponent),
         providers: [
