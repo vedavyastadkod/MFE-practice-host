@@ -30,7 +30,7 @@ module.exports = {
       library: { type: 'module' },
 
       remotes: {
-        // remoteApp: 'remoteApp@https://example.com/remoteEntry.js'
+        remoteApp: 'my-products-mfe@https://d5r4e842o6tb5.cloudfront.net/remoteEntry.js'
       },
       exposes: {
         // './Widget': './src/app/widget/widget.module.ts'
