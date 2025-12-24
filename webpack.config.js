@@ -11,7 +11,9 @@ module.exports = {
     uniqueName: 'my-host',
     publicPath: 'auto'
   },
-
+  optimization: {
+    runtimeChunk: false,
+  },
   // Only if you use library.type = 'module'
   experiments: {
     outputModule: true,
@@ -24,7 +26,7 @@ module.exports = {
     // }),
 
     new ModuleFederationPlugin({
-      
+
       library: { type: 'module' },
 
       remotes: {
