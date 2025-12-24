@@ -1,9 +1,15 @@
 <h1>
   Host works!!
 </h1>
-<nav>
-    <a routerLink="/products">Go to Products Component</a>
-    <a routerLink="/standalone">Go to Standalone Component</a>
-    <br /><br />
+<nav class="nav">
+  <a routerLink="/products" routerLinkActive="active">
+    Products
+  </a>
+
+  <a routerLink="/standalone" routerLinkActive="active">
+    Standalone
+  </a>
 </nav>
+
+<hr />
 <router-outlet></router-outlet>
