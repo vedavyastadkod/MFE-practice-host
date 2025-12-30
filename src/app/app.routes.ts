@@ -16,7 +16,7 @@ export const routes: Routes = [
         path: 'standalone',
         loadComponent: () => loadRemoteModule({
             type: 'module',
-            remoteEntry: 'https://d5r4e842o6tb5.cloudfront.net/remoteEntry.js',
+            remoteEntry: 'https://d5r4e842o6tb5.cloudfront.net/app/my-products-mfe/remoteEntry.js',
             exposedModule: './StandaloneComponent'
         }).then(m => m.StandaloneComponent),
         providers: [
